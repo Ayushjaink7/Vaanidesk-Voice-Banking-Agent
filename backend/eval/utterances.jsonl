@@ -1,0 +1,50 @@
+{"text": "what's my account balance", "intent": "check_balance", "language": "en"}
+{"text": "how much money do I have in my savings account", "intent": "check_balance", "language": "en"}
+{"text": "kitne paise bache hain mere account mein", "intent": "check_balance", "language": "hinglish"}
+{"text": "balance check karna hai", "intent": "check_balance", "language": "hinglish"}
+{"text": "मेरे खाते में कितना पैसा है", "intent": "check_balance", "language": "hi"}
+{"text": "can you tell me how much is left in my account", "intent": "check_balance", "language": "en"}
+{"text": "account mein kitna amount hai", "intent": "check_balance", "language": "hinglish"}
+{"text": "hi, can you check my balance please", "intent": "check_balance", "language": "en"}
+{"text": "when is my next EMI due", "intent": "emi_due", "language": "en"}
+{"text": "what is my loan installment amount", "intent": "emi_due", "language": "en"}
+{"text": "meri kist kab bharni hai", "intent": "emi_due", "language": "hinglish"}
+{"text": "home loan ka payment kab tak karna hai", "intent": "emi_due", "language": "hinglish"}
+{"text": "मेरी ईएमआई कितनी है", "intent": "emi_due", "language": "hi"}
+{"text": "how much do I need to pay for my loan this month", "intent": "emi_due", "language": "en"}
+{"text": "thanks, also tell me my EMI date", "intent": "emi_due", "language": "en"}
+{"text": "please block my debit card", "intent": "block_card", "card_type": "debit", "language": "en"}
+{"text": "I lost my wallet with my credit card in it", "intent": "block_card", "card_type": "credit", "language": "en"}
+{"text": "mera ATM card chori ho gaya", "intent": "block_card", "card_type": "debit", "language": "hinglish"}
+{"text": "someone made a payment from my card that I didn't do", "intent": "block_card", "language": "en"}
+{"text": "card band karwana hai turant", "intent": "block_card", "language": "hinglish"}
+{"text": "मेरा डेबिट कार्ड खो गया है", "intent": "block_card", "card_type": "debit", "language": "hi"}
+{"text": "my credit card is missing, stop all payments on it", "intent": "block_card", "card_type": "credit", "language": "en"}
+{"text": "show me my last few transactions", "intent": "recent_transactions", "language": "en"}
+{"text": "mini statement chahiye", "intent": "recent_transactions", "language": "hinglish"}
+{"text": "what were my recent payments", "intent": "recent_transactions", "language": "en"}
+{"text": "pichle hafte kya kya kharcha hua", "intent": "recent_transactions", "language": "hinglish"}
+{"text": "मेरे पिछले लेनदेन दिखाइए", "intent": "recent_transactions", "language": "hi"}
+{"text": "I want to talk to a real person", "intent": "talk_to_human", "language": "en"}
+{"text": "connect me to customer care", "intent": "talk_to_human", "language": "en"}
+{"text": "kisi agent se baat karao", "intent": "talk_to_human", "language": "hinglish"}
+{"text": "मुझे बैंक अधिकारी से बात करनी है", "intent": "talk_to_human", "language": "hi"}
+{"text": "hello", "intent": "greeting", "language": "en"}
+{"text": "namaste ji", "intent": "greeting", "language": "hinglish"}
+{"text": "that's all, thank you", "intent": "goodbye", "language": "en"}
+{"text": "bas itna hi, dhanyavad", "intent": "goodbye", "language": "hinglish"}
+{"text": "ठीक है धन्यवाद", "intent": "goodbye", "language": "hi"}
+{"text": "yes go ahead", "intent": "affirm", "awaiting": "confirm_block", "language": "en"}
+{"text": "haan ji kar dijiye", "intent": "affirm", "awaiting": "confirm_block", "language": "hinglish"}
+{"text": "हाँ, ब्लॉक कर दो", "intent": "affirm", "awaiting": "confirm_block", "language": "hi"}
+{"text": "sure, please do it", "intent": "affirm", "awaiting": "confirm_block", "language": "en"}
+{"text": "no wait, don't do that", "intent": "deny", "awaiting": "confirm_block", "language": "en"}
+{"text": "nahi abhi mat karo", "intent": "deny", "awaiting": "confirm_block", "language": "hinglish"}
+{"text": "actually I found the card, leave it", "intent": "deny", "awaiting": "confirm_block", "language": "en"}
+{"text": "the debit one", "intent": "provide_info", "card_type": "debit", "awaiting": "card_type", "language": "en"}
+{"text": "credit card wala", "intent": "provide_info", "card_type": "credit", "awaiting": "card_type", "language": "hinglish"}
+{"text": "my tpin is 4821", "intent": "provide_info", "awaiting": "tpin", "language": "en"}
+{"text": "four three two one", "intent": "provide_info", "awaiting": "tpin", "language": "en"}
+{"text": "what's the weather in Mumbai today", "intent": "unknown", "language": "en"}
+{"text": "can you book me a movie ticket", "intent": "unknown", "language": "en"}
+{"text": "I want to open a fixed deposit", "intent": "unknown", "language": "en"}

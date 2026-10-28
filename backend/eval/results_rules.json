@@ -1,0 +1,48 @@
+{
+  "provider": "rules",
+  "utterances": 50,
+  "intent_accuracy": 0.88,
+  "accuracy_by_language": {
+    "en": "24/28",
+    "hi": "7/7",
+    "hinglish": "13/15"
+  },
+  "card_type_accuracy": "7/7",
+  "latency_ms": {
+    "avg": 0.2,
+    "p95": 0.3
+  },
+  "llm_fallbacks": 0,
+  "mistakes": [
+    {
+      "text": "can you tell me how much is left in my account",
+      "expected": "check_balance",
+      "got": "unknown"
+    },
+    {
+      "text": "account mein kitna amount hai",
+      "expected": "check_balance",
+      "got": "unknown"
+    },
+    {
+      "text": "someone made a payment from my card that I didn't do",
+      "expected": "block_card",
+      "got": "unknown"
+    },
+    {
+      "text": "my credit card is missing, stop all payments on it",
+      "expected": "block_card",
+      "got": "provide_info"
+    },
+    {
+      "text": "pichle hafte kya kya kharcha hua",
+      "expected": "recent_transactions",
+      "got": "unknown"
+    },
+    {
+      "text": "actually I found the card, leave it",
+      "expected": "deny",
+      "got": "unknown"
+    }
+  ]
+}
