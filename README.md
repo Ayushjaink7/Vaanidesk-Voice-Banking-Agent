@@ -1,5 +1,7 @@
 # VaaniDesk
 
+[![CI](https://github.com/Ayushjaink7/Vaanidesk-Voice-Banking-Agent/actions/workflows/ci.yml/badge.svg)](https://github.com/Ayushjaink7/Vaanidesk-Voice-Banking-Agent/actions/workflows/ci.yml)
+
 A multilingual voice support agent for banking. A customer calls in and speaks English, Hindi or Hinglish ("mera debit card kho gaya hai"). VaaniDesk transcribes the voice, works out what they want, verifies their identity, calls the bank's API to do it, replies in the same language, and writes a post-call summary for the quality team.
 
 Built with **FastAPI (async Python), MongoDB, Redis, React, Groq (Whisper + an open LLM)**, with a mock core-banking API standing in for a real bank.
@@ -119,6 +121,8 @@ python -m eval.run_eval --provider llm   # intent accuracy with the LLM (needs G
 ```
 
 The tests run fully in memory (mongomock-motor, fakeredis, and the mock bank through httpx's ASGI transport). They cover TPIN masking, the LLM-to-rules fallback, every guardrail, bank outages, rate limiting, voice upload and the full call-to-summary path.
+
+**Continuous integration:** every push and pull request runs [GitHub Actions](.github/workflows/ci.yml). It runs the 37 tests on Python 3.11, 3.12 and 3.13, builds the React frontend, and builds all Docker images with Docker Compose. The Docker build runs only if the tests and the frontend build pass.
 
 `eval/utterances.jsonl` has 50 labelled utterances (28 English, 15 Hinglish, 7 Hindi), including indirect ones like *"someone made a payment from my card that I didn't do"*.
 
